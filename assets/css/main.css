@@ -591,7 +591,6 @@ ol li::marker {
 
 .custom-overlay {
     background-color: rgba(69, 80, 91, 0.85);
-    backdrop-filter: blur(2px);
     padding: 5rem;
     color: #ffffff;
 }
