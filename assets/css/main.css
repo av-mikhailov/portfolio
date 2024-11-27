@@ -417,6 +417,13 @@ h4 {
     color: var(--heading-color);
 }
 
+.small-heading {
+    font-size: 1rem;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
 p {
     color: var(--default-color);
     font-family: var(--default-font);
