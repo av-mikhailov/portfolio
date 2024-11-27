@@ -573,6 +573,7 @@ ol li::marker {
 
 .card-large .card-text a {
     color: #c9cdd2;
+    text-decoration: none;
 }
 
 .card-large .card-text a:hover {
