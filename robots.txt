@@ -1,4 +1,3 @@
 User-agent: *
-Allow: /favicon.ico
-Allow: /site.webmanifest
+Allow: /
 Sitemap: https://alexmikhailov.com/sitemap.xml
