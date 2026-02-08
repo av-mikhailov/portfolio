@@ -1,0 +1,88 @@
+.hero-name {
+    color: var(--heading-color);
+    text-transform: none;
+    font-weight: 400;
+}
+
+.hero-profession {
+    color: var(--heading-color);
+    font-size: 26px;
+    font-weight: 300;
+    padding-left: 2px;
+    @media (max-width: 500px) { font-size: 22px; }
+}
+
+.photo {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--background-white);
+    filter: grayscale(0.1);
+    filter: saturate(0.8);
+    
+    @media (max-width: 767px) { 
+        width: 220px;
+        margin: 0 auto; // Центрируем само фото
+        border-color: #EFF4FA; 
+    }
+    @media (max-width: 500px) { width: 220px; } // Чуть меньше для совсем маленьких экранов
+}
+
+.left-column-hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media (max-width: 767px) {
+        justify-content: center;
+        background-color: var(--background-white) !important;
+        border: none !important;
+        padding: 0; // Убираем лишние падинги, так как центрует родитель
+    }
+}
+
+.right-column-hero {
+    @media (max-width: 767px) {
+        background-color: var(--background-white) !important;
+        padding: 20px 0 0 0 !important; // Только отступ сверху от фото
+    }
+}
+
+#title {
+    min-height: 480px;
+
+    @media (max-width: 767px) {
+        // min-height: 100vh; 
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        
+        .left-column {
+            background-color: var(--background-white);
+            border: none;
+            flex: 0 0 auto; // Не даем колонке растягиваться
+        }
+        .right-column {
+            background-color: var(--background-white);
+            flex: 0 0 auto;
+        }
+    }
+}
+
+#contacts {
+    a {
+        color: var(--heading-color);
+        font-weight: 300;
+        &:hover { color: var(--accent-color); }
+    }
+    .social-links { font-size: 19px; }
+    
+    @media (max-width: 767px) {
+        .right-column { 
+            background-color: var(--background-light) !important; 
+        }
+    }
+}
+
+#portfolio a { text-decoration: none; }

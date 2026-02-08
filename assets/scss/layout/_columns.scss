@@ -1,0 +1,117 @@
+/* ==========================================================================
+   LAYOUT: COLUMNS & SECTIONS
+   ========================================================================== */
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    
+    &.hero { 
+        min-height: 100vh; 
+        
+        @media (max-width: 767px) {
+            flex-direction: column;
+            justify-content: center; // Центрирует колонки по вертикали на экране
+            align-items: center;
+            min-height: 100vh; // Гарантирует полный экран на мобилках
+        }
+    }
+}
+
+.left-column {
+    background-color: var(--background-light);
+    width: 40%;
+    padding: 80px;
+    text-align: right;
+    position: relative;
+
+    @media (max-width: 1400px) { padding: 40px; }
+    
+    @media (max-width: 992px) {
+        p { line-height: 1.2; }
+    }
+    
+    @media (max-width: 767px) { 
+        width: 100%; 
+        text-align: center; // Центрируем только фото/заголовки, если нужно
+        padding: 40px 30px;
+        border-top: 1px solid var(--background-dark);
+    }
+}
+
+.right-column {
+    background-color: var(--background-white);
+    width: 60%;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @media (max-width: 1400px) { padding: 40px; }
+    
+    @media (max-width: 767px) { 
+        width: 100%; 
+        padding: 20px 30px 40px 30px;
+        justify-content: center; // Сама колонка по центру, но текст внутри — нет
+    }
+}
+
+.content {
+    text-align: left; // Всегда по левому краю
+    width: 720px; 
+    
+    img {
+        border-radius: 16px;
+        border: 1px solid var(--background-dark);
+        width: 100%;
+    }
+    
+    hr {
+        margin-top: 48px;
+        color: #a6c5e1;
+    }
+
+    @media (max-width: 1400px) { width: 600px; }
+    @media (max-width: 1199px) { width: 500px; }
+    @media (max-width: 992px) { width: auto; }
+    
+    @media (max-width: 767px) { 
+        width: 100%;
+        text-align: left; // Убеждаемся, что на мобилках текст не прыгает в центр
+    }
+}
+
+.content-wrapper { 
+    max-width: 100%; 
+}
+
+/* Альтернативные секции (инверсия цветов) */
+.section-alt {
+    .left-column {
+        background-color: var(--background-dark);
+        display: block;
+        align-items: unset;
+        justify-content: flex-end;
+
+        @media (max-width: 767px) {
+            background-color: var(--background-light);
+        }
+    }
+    
+    .right-column {
+        background-color: var(--background-light);
+        // display: block;
+        align-items: center;
+        justify-content: flex-start;
+
+        @media (max-width: 767px) {
+            background-color: var(--background-white);
+            justify-content: center;
+        }
+    }
+}
+
+.text-bg-dark {
+    color: #ffffff;
+    background-color: RGBA(var(--bs-dark-rgb), var(--bs-bg-opacity, 1));
+}

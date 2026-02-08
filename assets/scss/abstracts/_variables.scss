@@ -1,0 +1,33 @@
+/* Fonts */
+:root {
+    --default-font: 'Montserrat', Arial, Helvetica, sans-serif;
+    --heading-font: 'Montserrat', Arial, Helvetica, sans-serif;
+    --accent-font: 'Philosopher', Arial, sans-serif;
+}
+
+/* Global Colors*/
+:root { 
+    --background-white: #ffffff;
+    --background-light: #F6F6F6;
+    --background-dark: #F0F0F0;
+    --default-color: #272829;
+    --heading-color: #4e565e;
+    --accent-color: #f19528;
+    --contrast-color: #ffffff;
+  }
+
+
+/* Nav Menu Colors */
+:root {
+    --nav-color: #4e565e;
+    --nav-hover-color: #4e565e;
+    --nav-mobile-background-color: #ffffff;
+    --nav-dropdown-background-color: #ffffff;
+    --nav-dropdown-color: #272829;
+    --nav-dropdown-hover-color: #4e565e
+}
+
+/* Smooth scroll */
+:root {
+    scroll-behavior: smooth;
+}
