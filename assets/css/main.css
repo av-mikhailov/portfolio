@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /* Fonts */
 :root {
-  --default-font: "Montserrat", Arial, Helvetica, sans-serif;
-  --heading-font: "Montserrat", Arial, Helvetica, sans-serif;
-  --accent-font: "Philosopher", Arial, sans-serif;
+  --default-font: 'Montserrat', Arial, Helvetica, sans-serif;
+  --heading-font: 'Montserrat', Arial, Helvetica, sans-serif;
+  --accent-font: 'Philosopher', Arial, sans-serif;
 }
 
 /* Global Colors*/
